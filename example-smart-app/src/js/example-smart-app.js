@@ -174,7 +174,7 @@
     $('#address').html(p.address.text);
     $('#phone').html(p.phone);
     $('#email').html(p.email);
-    $('#telecom').html(p.telecom);
+    $('#telecom').html(p.telecom.value);
     $('#systolicbp').html(p.systolicbp);
     $('#diastolicbp').html(p.diastolicbp);
     $('#ldl').html(p.ldl);
