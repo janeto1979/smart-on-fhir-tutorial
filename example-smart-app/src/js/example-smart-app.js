@@ -44,8 +44,6 @@
           var maritalStatus = patient.maritalStatus;
           
           var address = patient.address[0];
-          var phone = patient.phone;
-          var email = patient.email;
           var telecom = patient.telecom[0];
 
           var height = byCodes('8302-2');
@@ -62,8 +60,6 @@
           p.age = parseInt(calculateAge(dob));
           p.maritalStatus = maritalStatus;
           p.address = address;
-          p.phone = phone;
-          p.email = email;
           p.telecom = telecom;
 
           if(typeof height[0] != 'undefined' && typeof height[0].valueQuantity.value != 'undefined' && typeof height[0].valueQuantity.unit != 'undefined') {
@@ -107,8 +103,6 @@
       height: {value: ''},
       maritalStatus: {value: ''},
       address: {value: ''},
-      phone: {value: ''},
-      email: {value: ''},
       telecom: {value: ''},
       systolicbp: {value: ''},
       diastolicbp: {value: ''},
@@ -172,8 +166,6 @@
     $('#height').html(p.height);
     $('#maritalstatus').html(p.maritalStatus.text);
     $('#address').html(p.address.text);
-    $('#phone').html(p.phone);
-    $('#email').html(p.email);
     $('#telecom').html(p.telecom.value);
     $('#systolicbp').html(p.systolicbp);
     $('#diastolicbp').html(p.diastolicbp);
