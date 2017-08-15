@@ -46,7 +46,7 @@
           var address = patient.address;
           var phone = patient.phone;
           var email = patient.email;
-          var telecom = patient.contact.telecom;
+          var telecom = patient.telecom;
 
           var height = byCodes('8302-2');
           var systolicbp = getBloodPressureValue(byCodes('55284-4'),'8480-6');
