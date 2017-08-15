@@ -162,7 +162,7 @@
     $('#age').html(p.age);
     $('#height').html(p.height);
     $('#maritalstatus').html(p.maritalStatus.text);
-    $('#address').html(p.address.text);
+    $('#address').html(p.address);
     $('#systolicbp').html(p.systolicbp);
     $('#diastolicbp').html(p.diastolicbp);
     $('#ldl').html(p.ldl);
