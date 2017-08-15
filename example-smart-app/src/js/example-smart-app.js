@@ -171,7 +171,7 @@
     $('#age').html(p.age);
     $('#height').html(p.height);
     $('#maritalstatus').html(p.maritalStatus.text);
-    $('#address').html(p.address);
+    $('#address').html(p.address.text);
     $('#phone').html(p.phone);
     $('#email').html(p.email);
     $('#telecom').html(p.telecom);
