@@ -46,6 +46,7 @@
           var address = patient.address;
           var phone = patient.phone;
           var email = patient.email;
+          var telecom = patient.telecom;
 
           var height = byCodes('8302-2');
           var systolicbp = getBloodPressureValue(byCodes('55284-4'),'8480-6');
@@ -63,6 +64,7 @@
           p.address = address;
           p.phone = phone;
           p.email = email;
+          p.telecom = telecom;
 
           if(typeof height[0] != 'undefined' && typeof height[0].valueQuantity.value != 'undefined' && typeof height[0].valueQuantity.unit != 'undefined') {
             p.height = height[0].valueQuantity.value + ' ' + height[0].valueQuantity.unit;
@@ -107,6 +109,7 @@
       address: {value: ''},
       phone: {value: ''},
       email: {value: ''},
+      telecom: {value: ''},
       systolicbp: {value: ''},
       diastolicbp: {value: ''},
       ldl: {value: ''},
@@ -171,6 +174,7 @@
     $('#address').html(p.address);
     $('#phone').html(p.phone);
     $('#email').html(p.email);
+    $('#telecom').html(p.telecom);
     $('#systolicbp').html(p.systolicbp);
     $('#diastolicbp').html(p.diastolicbp);
     $('#ldl').html(p.ldl);
