@@ -43,10 +43,10 @@
           
           var maritalStatus = patient.maritalStatus;
           
-          var address = patient.address;
+          var address = patient.address[0];
           var phone = patient.phone;
           var email = patient.email;
-          var telecom = patient.telecom;
+          var telecom = patient.telecom[0];
 
           var height = byCodes('8302-2');
           var systolicbp = getBloodPressureValue(byCodes('55284-4'),'8480-6');
