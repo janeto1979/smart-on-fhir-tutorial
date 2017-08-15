@@ -43,8 +43,8 @@
           
           var maritalStatus = patient.maritalStatus;
           
-          var address = patient.address[0];
-          var telecom = patient.telecom[0];
+       //   var address = patient.address[0];
+        //  var telecom = patient.telecom[0];
 
           var height = byCodes('8302-2');
           var systolicbp = getBloodPressureValue(byCodes('55284-4'),'8480-6');
@@ -59,8 +59,8 @@
           p.lname = lname;
           p.age = parseInt(calculateAge(dob));
           p.maritalStatus = maritalStatus;
-          p.address = address;
-          p.telecom = telecom;
+     //     p.address = address;
+    //      p.telecom = telecom;
 
           if(typeof height[0] != 'undefined' && typeof height[0].valueQuantity.value != 'undefined' && typeof height[0].valueQuantity.unit != 'undefined') {
             p.height = height[0].valueQuantity.value + ' ' + height[0].valueQuantity.unit;
@@ -102,8 +102,8 @@
       age: {value: ''},
       height: {value: ''},
       maritalStatus: {value: ''},
-      address: {value: ''},
-      telecom: {value: ''},
+  //    address: {value: ''},
+  //    telecom: {value: ''},
       systolicbp: {value: ''},
       diastolicbp: {value: ''},
       ldl: {value: ''},
@@ -165,8 +165,8 @@
     $('#age').html(p.age);
     $('#height').html(p.height);
     $('#maritalstatus').html(p.maritalStatus.text);
-    $('#address').html(p.address.text);
-    $('#telecom').html(p.telecom.value);
+//    $('#address').html(p.address.text);
+//    $('#telecom').html(p.telecom.value);
     $('#systolicbp').html(p.systolicbp);
     $('#diastolicbp').html(p.diastolicbp);
     $('#ldl').html(p.ldl);
